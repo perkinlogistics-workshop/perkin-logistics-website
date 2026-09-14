@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://perkin-logistics.santroxing3358.chatgpt.site/sitemap.xml

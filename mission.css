@@ -1,0 +1,116 @@
+.mission-section {
+  position: relative;
+  display: grid;
+  grid-template-columns: 48% minmax(0, 1fr);
+  gap: 0;
+  margin: 20px 16px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: 12px 12px 40px 12px;
+  background: #f8f8f8;
+}
+.mission-art {
+  position: relative;
+  overflow: hidden;
+  min-height: 100%;
+}
+/* Show only the artwork in the supplied reference; all copy is live HTML. */
+.mission-art img {
+  position: absolute;
+  width: 214%;
+  max-width: none;
+  height: 104%;
+  left: -2%;
+  top: -2%;
+}
+.mission-art::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent 78%, #f8f8f8 100%);
+}
+.mission-copy {
+  position: relative;
+  padding: 64px clamp(28px, 4.8vw, 82px) 68px 28px;
+}
+.mission-intro {
+  padding: 0;
+}
+.mission-intro .kicker {
+  color: #f36532;
+  font-size: 15px;
+  letter-spacing: 0.18em;
+}
+.mission-intro h2 {
+  font-size: clamp(27px, 2.35vw, 40px);
+  line-height: 1.4;
+  letter-spacing: -0.025em;
+  margin: 14px 0 22px;
+}
+.mission-intro > p {
+  max-width: none;
+  color: #102238;
+  font-size: clamp(16px, 1.2vw, 20px);
+  line-height: 1.8;
+  margin-bottom: 38px;
+}
+.mission-values article {
+  padding: 0;
+  margin: 0 0 35px;
+  border: 0;
+}
+.mission-values article > span {
+  font-size: clamp(14px, 1.18vw, 20px);
+  font-weight: 400;
+  letter-spacing: 0;
+  color: #173858;
+}
+.mission-values h3 {
+  font-size: clamp(19px, 1.5vw, 25px);
+  margin: 8px 0 18px;
+}
+.mission-values p {
+  color: #102238;
+  font-size: clamp(15px, 1.15vw, 19px);
+  line-height: 1.75;
+}
+@media (max-width: 900px) {
+  .mission-section {
+    grid-template-columns: 1fr;
+    margin: 16px;
+    border-radius: 12px 12px 28px 28px;
+  }
+  .mission-art {
+    min-height: 0;
+    aspect-ratio: 0.9;
+    width: min(100%, 480px);
+    justify-self: center;
+  }
+  .mission-art::after {
+    background: linear-gradient(0deg, #f8f8f8, transparent 18%);
+  }
+  .mission-copy {
+    padding: 12px 28px 40px;
+  }
+  .mission-intro h2 {
+    font-size: clamp(27px, 4.8vw, 38px);
+  }
+}
+@media (max-width: 480px) {
+  .mission-section {
+    margin: 12px;
+  }
+  .mission-copy {
+    padding: 12px 20px 32px;
+  }
+  .mission-intro .kicker {
+    font-size: 12px;
+  }
+  .mission-intro h2 {
+    font-size: 26px;
+  }
+  .mission-values article {
+    margin-bottom: 28px;
+  }
+}

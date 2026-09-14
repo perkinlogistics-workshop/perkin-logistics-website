@@ -1,0 +1,397 @@
+.company-logo {
+  display: block;
+  width: 145px;
+  height: auto;
+  background: #fff;
+  padding: 5px 8px;
+  border-radius: 4px;
+}
+.memberships {
+  background: #f7f5ef;
+}
+.membership-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+}
+.membership-card {
+  background: #fff;
+  border: 1px solid #dce1e5;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.membership-copy {
+  padding: 30px 30px 18px;
+}
+.membership-copy h3 {
+  font-size: 24px;
+  margin: 12px 0;
+}
+.membership-copy p {
+  color: #627082;
+  font-size: 14px;
+  line-height: 1.8;
+}
+.certificate-link {
+  display: block;
+  padding: 0 24px 24px;
+}
+.certificate-link img {
+  display: block;
+  width: 100%;
+  height: 330px;
+  object-fit: contain;
+  background: #fff;
+}
+.certificate-link span {
+  display: block;
+  text-align: center;
+  color: #b74309;
+  font-size: 13px;
+  font-weight: 700;
+  margin-top: 18px;
+}
+.certificate-link:hover span {
+  text-decoration: underline;
+}
+@media (max-width: 600px) {
+  .company-logo {
+    width: 125px;
+  }
+  .membership-grid {
+    grid-template-columns: 1fr;
+  }
+  .membership-copy {
+    padding: 24px;
+  }
+  .certificate-link img {
+    height: 280px;
+  }
+}
+.logistics-services {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.extras strong {
+  line-height: 1.5;
+}
+.extras small {
+  line-height: 1.6;
+}
+.about-panel .established {
+  color: #fff;
+  border-left: 3px solid #f56a22;
+  padding-left: 14px;
+  margin: 24px 0;
+}
+@media (max-width: 600px) {
+  .logistics-services {
+    grid-template-columns: 1fr;
+  }
+}
+.site-header {
+  position: relative;
+  background: #fff;
+  color: #073e76;
+  border-bottom: 1px solid #e5eaf0;
+  height: 90px;
+}
+.site-header .company-logo {
+  width: 175px;
+  padding: 0;
+}
+.site-header .nav-cta {
+  background: #bb1623;
+  color: #fff;
+  border-color: #bb1623;
+}
+.site-header nav > a:not(.nav-cta):hover {
+  color: #bb1623;
+}
+.menu-btn {
+  color: #073e76;
+}
+:root {
+  --navy: #062443;
+  --navy2: #073766;
+  --orange: #bb1623;
+  --cream: #f5f8fb;
+}
+.hero {
+  min-height: 660px;
+  padding-top: 75px;
+  background: radial-gradient(
+    ellipse at 80% 42%,
+    #165987 0,
+    #073966 35%,
+    #062443 75%
+  );
+}
+.hero h1 {
+  font-size: clamp(48px, 5.5vw, 80px);
+  line-height: 1.08;
+  letter-spacing: -0.045em;
+}
+.hero h1 em {
+  color: #fff;
+  text-decoration: underline;
+  text-decoration-color: #e53a46;
+  text-decoration-thickness: 5px;
+  text-underline-offset: 12px;
+}
+.hero-copy > p {
+  font-size: 18px;
+  max-width: 570px;
+}
+.hero-proof {
+  gap: 28px;
+}
+.hero-proof strong {
+  font-size: 17px;
+}
+.primary:hover {
+  background: #98101b;
+}
+.trust-strip {
+  background: #f4f7fb;
+  color: #17426c;
+  border-bottom: 1px solid #dce5ee;
+  letter-spacing: 0.06em;
+}
+.mission-section {
+  padding: 90px clamp(24px, 7vw, 110px);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  background: #fff;
+  border-bottom: 1px solid #e2e8ef;
+}
+.mission-intro h2 {
+  font-size: clamp(32px, 3.6vw, 50px);
+  line-height: 1.15;
+  letter-spacing: -0.04em;
+  margin: 18px 0;
+}
+.mission-intro > p {
+  font-size: 16px;
+  color: #627082;
+  line-height: 1.8;
+  max-width: 530px;
+}
+@media (min-width: 901px) {
+  .mission-intro {
+    padding-left: 40px;
+  }
+}
+.mission-values article {
+  padding: 0 0 22px;
+  margin-bottom: 22px;
+  border-bottom: 1px solid #e2e8ef;
+}
+.mission-values article:last-child {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+.mission-values article > span {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: #bb1623;
+}
+.mission-values h3 {
+  font-size: 21px;
+  margin: 9px 0;
+}
+.mission-values p {
+  font-size: 14px;
+  line-height: 1.65;
+  color: #627082;
+  margin: 0;
+}
+.services {
+  background: #f5f8fb;
+}
+.service-grid {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.extras {
+  background: #fff;
+}
+.section-head {
+  gap: 30px;
+}
+.service-icon,
+.route-card > span,
+.steps b {
+  background: #edf3fa;
+  color: #07457f;
+}
+.service:hover {
+  transform: none;
+}
+.featured .service-icon {
+  color: #fff;
+}
+.featured > a {
+  color: #ffb6bc;
+}
+.light {
+  color: #ffb6bc;
+}
+.about-panel {
+  background: #073766;
+}
+.about-panel .established {
+  border-color: #ed4a56;
+}
+.text-link {
+  border-color: #ed4a56;
+}
+.memberships {
+  background: #fff;
+}
+.certificate-link span {
+  color: #07457f;
+}
+.orbit {
+  border-color: #ffffff55;
+}
+.pin {
+  background: #bb1623;
+  border-color: #ffb6bc;
+  box-shadow: 0 0 0 7px #bb162330;
+}
+.card-two {
+  right: 0;
+}
+.contact-mini a,
+.footer-grid a {
+  overflow-wrap: anywhere;
+}
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #f09d34;
+  outline-offset: 5px;
+}
+@media (max-width: 900px) {
+  .site-header nav {
+    top: 90px;
+    background: #fff;
+    color: #073e76;
+    border-bottom: 1px solid #dde5ee;
+  }
+  .hero {
+    padding-top: 65px;
+  }
+  .mission-section {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+  .hero-visual {
+    max-width: 550px;
+    width: 100%;
+    margin: 30px auto 0;
+  }
+}
+@media (max-width: 600px) {
+  .site-header {
+    height: 78px;
+  }
+  .site-header nav {
+    top: 78px;
+  }
+  .site-header .company-logo {
+    width: 145px;
+  }
+  .hero {
+    padding-top: 48px;
+    padding-bottom: 45px;
+  }
+  .hero h1 {
+    font-size: 46px;
+  }
+  .hero-proof {
+    gap: 22px;
+  }
+  .hero-proof strong {
+    font-size: 14px;
+  }
+  .hero-copy > p {
+    font-size: 16px;
+  }
+  .mission-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .hero-visual {
+    height: 330px;
+  }
+  .card-one {
+    left: 0;
+  }
+  .globe {
+    width: 280px;
+    height: 280px;
+    left: calc(50% - 140px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    transition: none !important;
+  }
+}
+
+/* Matching logo frames keep GLF and URS centered at the same width. */
+.membership-logo-card {
+  display: grid;
+  grid-template-rows: 1fr 260px;
+}
+.membership-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 260px;
+  padding: 20px 24px;
+  background: #fff;
+}
+.membership-logo img {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+}
+@media (max-width: 600px) {
+  .membership-logo-card {
+    grid-template-rows: 1fr 220px;
+  }
+  .membership-logo {
+    height: 220px;
+    padding: 20px;
+  }
+}
+
+.ip-networking-card .membership-copy p {
+  font-size: 16px;
+}
+
+/* Increase the portrait certificate by 20% while preserving its proportions. */
+.ip-networking-card .certificate-link img {
+  height: 396px;
+}
+@media (max-width: 600px) {
+  .ip-networking-card .certificate-link img {
+    height: 336px;
+  }
+}
+
+.membership-logo-card .membership-copy p {
+  font-size: 16px;
+  line-height: 1.8;
+}
