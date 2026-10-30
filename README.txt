@@ -16,7 +16,7 @@ and the website URLs in sitemap.xml and robots.txt.
 
 QUOTE FORM
 The form opens the visitor's email application with a prepared message to
-sales-oversea@perkin-logistics.com. The visitor must send that email.
+info@perkin-logistics.com. The visitor must send that email.
 It does not send email automatically through a server.
 
 Local asset links were made relative so the extracted website can be previewed

@@ -26,5 +26,5 @@ document.getElementById("quoteForm").addEventListener("submit", (e) => {
     () => document.querySelector(".toast").classList.remove("show"),
     4000,
   );
-  window.location.href = `mailto:sales-oversea@perkin-logistics.com?subject=${subject}&body=${body}`;
+  window.location.href = `mailto:info@perkin-logistics.com?subject=${subject}&body=${body}`;
 });
